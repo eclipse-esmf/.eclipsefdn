@@ -28,7 +28,7 @@ orgs.newOrg('eclipse-esmf') {
       value: "pass:bots/dt.esmf/oss.sonatype.org/username",
     },
     orgs.newOrgSecret('PGP_KEY') {
-      value: "pass:bots/dt.esmf/gpg/key_id",
+      value: "pass:bots/dt.esmf/gpg/secret-subkeys.asc",
     },
     orgs.newOrgSecret('PGP_KEY_PASSWORD') {
       value: "pass:bots/dt.esmf/gpg/passphrase",
