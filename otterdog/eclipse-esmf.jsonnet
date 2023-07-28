@@ -168,7 +168,7 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Demo of the esmf-sdk-js-schematics repository",
       gh_pages_build_type: "legacy",
-      gh_pages_source_branch: "main",
+      gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       secret_scanning: "disabled",
