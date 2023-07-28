@@ -19,22 +19,22 @@ orgs.newOrg('eclipse-esmf') {
   },
   secrets+: [
     orgs.newOrgSecret('NPMJS_TOKEN') {
-      value: "********",
+      value: "pass:bots/dt.esmf/npmjs.com/token",
     },
     orgs.newOrgSecret('OSSRH_TOKEN') {
       value: "********",
     },
     orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: "********",
+      value: "pass:bots/dt.esmf/oss.sonatype.org/username",
     },
     orgs.newOrgSecret('PGP_KEY') {
-      value: "********",
+      value: "pass:bots/dt.esmf/gpg/key_id",
     },
     orgs.newOrgSecret('PGP_KEY_PASSWORD') {
-      value: "********",
+      value: "pass:bots/dt.esmf/gpg/passphrase",
     },
     orgs.newOrgSecret('PYPI_TOKEN') {
-      value: "********",
+      value: "pass:bots/dt.esmf/pypi.org/api-token",
     },
   ],
   _repositories+:: [
