@@ -42,6 +42,9 @@ orgs.newOrg('eclipse-esmf') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "The ESMF project website",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
@@ -164,6 +167,9 @@ orgs.newOrg('eclipse-esmf') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "Demo of the esmf-sdk-js-schematics repository",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "main",
+      gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
@@ -171,7 +177,8 @@ orgs.newOrg('eclipse-esmf') {
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
-            "gh-pages"
+            "gh-pages",
+            "main"
           ],
           deployment_branch_policy: "selected",
         },
@@ -199,6 +206,9 @@ orgs.newOrg('eclipse-esmf') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "Formal and textual specification of the Semantic Aspect Meta Model (SAMM)",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/samm-specification/snapshot/index.html",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
