@@ -141,16 +141,20 @@ orgs.newOrg('eclipse-esmf') {
     orgs.newRepo('esmf-sdk-js-aspect-model-loader') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
-      description: "Load Aspect Models as AngularJS for UIs based on aspect models",
+      description: "Load Aspect Models into TypeScript. This facilitates JavaScript projects e.g. based on Angular and React.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
+      topics+: [
+        "javascript",
+        "js"
+      ],
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-sdk-js-schematics') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
-      description: "Create dynamic schematic UI components for angular javascript applications",
+      description: "Create UI components for Angular applications with Schematics based on Aspect Models.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
