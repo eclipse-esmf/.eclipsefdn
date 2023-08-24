@@ -46,8 +46,6 @@ orgs.newOrg('eclipse-esmf') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "ame",
         "digital-twin",
@@ -76,8 +74,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Offer Antora UI components to publish documentation",
       homepage: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-aspect-model-editor') {
@@ -85,8 +81,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Manage Aspect Models visually and persistence in local files",
       homepage: "https://eclipse-esmf.github.io/ame-guide/introduction.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-aspect-model-editor-backend') {
@@ -94,24 +88,18 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Provide a backend for the Aspect Model Editor (for the downloadable installer, please find the repository \"esmf-aspect-model-editor\").",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-manufacturing-information-model') {
       allow_update_branch: false,
       description: "Provide manufacturing information models",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-parent') {
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "Parent for shared dependencies",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-sdk') {
@@ -119,8 +107,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Load Aspect Models and their artifacts as Java code; share components to realize SAMM as code",
       homepage: "https://eclipse-esmf.github.io/esmf-developer-guide/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       secrets: [
         orgs.newRepoSecret('SONAR_TOKEN') {
@@ -143,8 +129,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Load Aspect Models into TypeScript. This facilitates JavaScript projects e.g. based on Angular and React.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "javascript",
         "js"
@@ -156,8 +140,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Create UI components for Angular applications with Schematics based on Aspect Models.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "angular",
         "aspect-models",
@@ -175,8 +157,6 @@ orgs.newOrg('eclipse-esmf') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       environments: [
         orgs.newEnvironment('github-pages') {
@@ -193,8 +173,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Load Aspect Models in Python",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-sdk-py-pandas-dataframe') {
@@ -202,8 +180,6 @@ orgs.newOrg('eclipse-esmf') {
       dependabot_alerts_enabled: false,
       description: "Support Pandas DataFrame with your Aspect Models in Python",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('esmf-semantic-aspect-meta-model') {
@@ -214,8 +190,6 @@ orgs.newOrg('eclipse-esmf') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/samm-specification/snapshot/index.html",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       secrets: [
         orgs.newRepoSecret('REPOSITORY_URL') {
