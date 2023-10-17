@@ -13,6 +13,9 @@ orgs.newOrg('eclipse-esmf') {
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
+    security_managers+: [
+      "dt-esmf-committers",
+    ],
     two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
@@ -113,7 +116,6 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Parent for shared dependencies",
       web_commit_signoff_required: false,
     },
@@ -121,7 +123,6 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Load Aspect Models and their artifacts as Java code; share components to realize SAMM as code",
       homepage: "https://eclipse-esmf.github.io/esmf-developer-guide/index.html",
       web_commit_signoff_required: false,
