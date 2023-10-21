@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-esmf.github.io/.eclipsefdn/
 
+repo_name: eclipse-esmf/.eclipsefdn
+repo_url: https://github.com/eclipse-esmf/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 
