@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-esmf') {
   settings+: {
     blog: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
-    default_repository_permission: "none",
     dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
@@ -14,7 +13,7 @@ orgs.newOrg('eclipse-esmf') {
     packages_containers_public: false,
     readers_can_create_discussions: true,
     security_managers+: [
-      "dt-esmf-committers",
+      "dt-esmf-committers"
     ],
     two_factor_requirement: false,
     web_commit_signoff_required: false,
@@ -67,6 +66,10 @@ orgs.newOrg('eclipse-esmf') {
         "semantic"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -85,24 +88,36 @@ orgs.newOrg('eclipse-esmf') {
       description: "Offer Antora UI components to publish documentation",
       homepage: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-aspect-model-editor') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
+      dependabot_security_updates_enabled: true,
       description: "Manage Aspect Models visually and persistence in local files",
       homepage: "https://eclipse-esmf.github.io/ame-guide/introduction.html",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-aspect-model-editor-backend') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
+      dependabot_security_updates_enabled: true,
       description: "Provide a backend for the Aspect Model Editor (for the downloadable installer, please find the repository \"esmf-aspect-model-editor\").",
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-manufacturing-information-model') {
       allow_merge_commit: true,
@@ -111,6 +126,10 @@ orgs.newOrg('eclipse-esmf') {
       description: "Provide manufacturing information models",
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-parent') {
       allow_merge_commit: true,
@@ -118,6 +137,10 @@ orgs.newOrg('eclipse-esmf') {
       delete_branch_on_merge: false,
       description: "Parent for shared dependencies",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-sdk') {
       allow_merge_commit: true,
@@ -126,6 +149,10 @@ orgs.newOrg('eclipse-esmf') {
       description: "Load Aspect Models and their artifacts as Java code; share components to realize SAMM as code",
       homepage: "https://eclipse-esmf.github.io/esmf-developer-guide/index.html",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('SONAR_TOKEN') {
           value: "********",
@@ -146,7 +173,7 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
+      dependabot_security_updates_enabled: true,
       description: "Load Aspect Models into TypeScript. This facilitates JavaScript projects e.g. based on Angular and React.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       topics+: [
@@ -154,12 +181,16 @@ orgs.newOrg('eclipse-esmf') {
         "js"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-sdk-js-schematics') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
+      dependabot_security_updates_enabled: true,
       description: "Create UI components for Angular applications with Schematics based on Aspect Models.",
       homepage: "https://eclipse-esmf.github.io/js-sdk-guide/index.html",
       topics+: [
@@ -170,6 +201,10 @@ orgs.newOrg('eclipse-esmf') {
         "js"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-sdk-js-schematics-demo') {
       allow_merge_commit: true,
@@ -182,6 +217,10 @@ orgs.newOrg('eclipse-esmf') {
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/esmf-sdk-js-schematics-demo/",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -200,6 +239,10 @@ orgs.newOrg('eclipse-esmf') {
       description: "Load Aspect Models in Python",
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-sdk-py-pandas-dataframe') {
       allow_merge_commit: true,
@@ -209,6 +252,10 @@ orgs.newOrg('eclipse-esmf') {
       description: "Support Pandas DataFrame with your Aspect Models in Python",
       homepage: "",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('esmf-semantic-aspect-meta-model') {
       allow_merge_commit: true,
@@ -221,6 +268,10 @@ orgs.newOrg('eclipse-esmf') {
       gh_pages_source_path: "/",
       homepage: "https://eclipse-esmf.github.io/samm-specification/snapshot/index.html",
       web_commit_signoff_required: false,
+      workflows+: {
+        actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('REPOSITORY_URL') {
           value: "********",
