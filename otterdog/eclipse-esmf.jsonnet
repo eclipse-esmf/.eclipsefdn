@@ -98,7 +98,7 @@ orgs.newOrg('eclipse-esmf') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
-      description: "Manage Aspect Models visually and persistence in local files",
+      description: "Manage Aspect Models visually — create, validate, create artefacts, persist file based",
       homepage: "https://eclipse-esmf.github.io/ame-guide/introduction.html",
       web_commit_signoff_required: false,
       workflows+: {
@@ -261,7 +261,6 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Formal and textual specification of the Semantic Aspect Meta Model (SAMM)",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
