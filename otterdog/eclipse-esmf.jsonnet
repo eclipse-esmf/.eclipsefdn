@@ -237,7 +237,7 @@ orgs.newOrg('eclipse-esmf') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "Load Aspect Models in Python",
-      homepage: "",
+      homepage: "https://pypi.org/project/esmf-aspect-model-loader/",
       web_commit_signoff_required: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
