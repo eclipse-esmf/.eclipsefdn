@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-esmf') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     dependency_graph_enabled_for_new_repositories: false,
     description: "Model aspects of digital twins to create APIs & UIs based on semantic information. ",
-    members_can_change_project_visibility: false,
     name: "Eclipse Semantic Modeling Framework (ESMF)",
     packages_containers_internal: false,
     packages_containers_public: false,
