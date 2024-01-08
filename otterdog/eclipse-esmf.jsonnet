@@ -3,9 +3,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-esmf') {
   settings+: {
     blog: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
-    dependabot_alerts_enabled_for_new_repositories: false,
     dependabot_security_updates_enabled_for_new_repositories: false,
-    dependency_graph_enabled_for_new_repositories: false,
     description: "Model aspects of digital twins to create APIs & UIs based on semantic information. ",
     name: "Eclipse Semantic Modeling Framework (ESMF)",
     packages_containers_internal: false,
@@ -46,7 +44,6 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "The ESMF project website",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
@@ -66,7 +63,6 @@ orgs.newOrg('eclipse-esmf') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       environments: [
@@ -83,12 +79,10 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Offer Antora UI components to publish documentation",
       homepage: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -101,7 +95,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "https://eclipse-esmf.github.io/ame-guide/introduction.html",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -114,7 +107,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -126,7 +118,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -137,7 +128,6 @@ orgs.newOrg('eclipse-esmf') {
       description: "Parent for shared dependencies",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -149,7 +139,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "https://eclipse-esmf.github.io/esmf-developer-guide/index.html",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       secrets: [
@@ -181,7 +170,6 @@ orgs.newOrg('eclipse-esmf') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -201,7 +189,6 @@ orgs.newOrg('eclipse-esmf') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -209,7 +196,6 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Experience the JS Schematics by trying this demo",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
@@ -217,7 +203,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "https://eclipse-esmf.github.io/esmf-sdk-js-schematics-demo/",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       environments: [
@@ -234,12 +219,10 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Load Aspect Models in Python",
       homepage: "https://pypi.org/project/esmf-aspect-model-loader/",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -247,12 +230,10 @@ orgs.newOrg('eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      dependabot_alerts_enabled: false,
       description: "Support Pandas DataFrame with your Aspect Models in Python",
       homepage: "",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -267,7 +248,6 @@ orgs.newOrg('eclipse-esmf') {
       homepage: "https://eclipse-esmf.github.io/samm-specification/snapshot/index.html",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       secrets: [
