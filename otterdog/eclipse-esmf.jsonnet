@@ -77,6 +77,12 @@ orgs.newOrg('eclipse-esmf') {
     orgs.newRepo('esmf-antora-ui') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Offer Antora UI components to publish documentation",
       homepage: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
@@ -133,6 +139,12 @@ orgs.newOrg('eclipse-esmf') {
     orgs.newRepo('esmf-sdk') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Load Aspect Models and their artifacts as Java code; share components to realize SAMM as code",
       homepage: "https://eclipse-esmf.github.io/esmf-developer-guide/index.html",
@@ -217,6 +229,10 @@ orgs.newOrg('eclipse-esmf') {
     orgs.newRepo('esmf-sdk-py-aspect-model-loader') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "python"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Load Aspect Models in Python",
       homepage: "https://pypi.org/project/esmf-aspect-model-loader/",
@@ -239,6 +255,13 @@ orgs.newOrg('eclipse-esmf') {
     orgs.newRepo('esmf-semantic-aspect-meta-model') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      code_scanning_default_languages+: [
+        "java-kotlin",
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
       description: "Formal and textual specification of the Semantic Aspect Meta Model (SAMM)",
       gh_pages_build_type: "legacy",
