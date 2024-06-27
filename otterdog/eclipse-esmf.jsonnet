@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-esmf') {
   settings+: {
     blog: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Model aspects of digital twins to create APIs & UIs based on semantic information. ",
     name: "Eclipse Semantic Modeling Framework (ESMF)",
     security_managers+: [
