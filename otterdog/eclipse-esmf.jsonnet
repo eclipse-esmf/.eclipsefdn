@@ -174,7 +174,7 @@ orgs.newOrg('eclipse-esmf') {
       description: "Demonstrate usage of esmf-sdk",
       web_commit_signoff_required: false,
       workflows+: {
-        default_workflow_permissions: "write",
+        default_workflow_permissions: "read",
       },
     },
     orgs.newRepo('esmf-sdk-js-aspect-model-loader') {
