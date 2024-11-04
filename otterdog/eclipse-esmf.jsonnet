@@ -167,6 +167,13 @@ orgs.newOrg('eclipse-esmf') {
         orgs.newEnvironment('build'),
       ],
     },
+    orgs.newRepo('esmf-sdk-demo') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Demonstrate usage of esmf-sdk",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('esmf-sdk-js-aspect-model-loader') {
       allow_merge_commit: true,
       allow_update_branch: false,
