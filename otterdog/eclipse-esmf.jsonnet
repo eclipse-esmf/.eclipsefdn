@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-esmf') {
+orgs.newOrg('dt.esmf', 'eclipse-esmf') {
   settings+: {
     blog: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
     description: "Model aspects of digital twins to create APIs & UIs based on semantic information. ",
