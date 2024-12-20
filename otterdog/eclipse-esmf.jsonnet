@@ -5,9 +5,6 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
     blog: "https://eclipse-esmf.github.io/esmf-documentation/index.html",
     description: "Model aspects of digital twins to create APIs & UIs based on semantic information. ",
     name: "Eclipse Semantic Modeling Framework (ESMF)",
-    security_managers+: [
-      "dt-esmf-committers"
-    ],
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
