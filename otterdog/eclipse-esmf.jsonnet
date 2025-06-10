@@ -15,11 +15,11 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
     orgs.newOrgSecret('NPMJS_TOKEN') {
       value: "pass:bots/dt.esmf/npmjs.com/token",
     },
-    orgs.newOrgSecret('OSSRH_TOKEN') {
-      value: "pass:bots/dt.esmf/oss.sonatype.org/gh-token-password",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/dt.esmf/central.sonatype.org/token-password",
     },
-    orgs.newOrgSecret('OSSRH_USERNAME') {
-      value: "pass:bots/dt.esmf/oss.sonatype.org/gh-token-username",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/dt.esmf/central.sonatype.org/token-username",
     },
     orgs.newOrgSecret('PGP_KEY') {
       value: "pass:bots/dt.esmf/gpg/secret-subkeys.asc",
@@ -74,9 +74,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
@@ -136,9 +134,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
@@ -260,9 +256,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_update_branch: false,
       code_scanning_default_languages+: [
         "java-kotlin",
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
