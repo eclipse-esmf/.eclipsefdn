@@ -256,6 +256,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin",
         "javascript-typescript",
       ],
