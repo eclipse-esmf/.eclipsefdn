@@ -74,6 +74,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
@@ -96,6 +97,11 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      secrets+: [
+        orgs.newRepoSecret('SIGNPATH_API_TOKEN') {
+          value: "pass:bots/dt.esmf/signpath.io/api-token",
+        },
+      ],
     },
     orgs.newRepo('esmf-aspect-model-editor-backend') {
       allow_merge_commit: true,
@@ -108,6 +114,11 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      secrets+: [
+        orgs.newRepoSecret('SIGNPATH_API_TOKEN') {
+          value: "pass:bots/dt.esmf/signpath.io/api-token",
+        },
+      ],
     },
     orgs.newRepo('esmf-manufacturing-information-model') {
       allow_merge_commit: true,
@@ -230,6 +241,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "python"
       ],
       code_scanning_default_setup_enabled: true,
@@ -260,7 +272,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
         "java-kotlin",
         "javascript-typescript",
       ],
-      code_scanning_default_setup_enabled: true,
+      code_scanning_default_setup_enabled: false,
       delete_branch_on_merge: false,
       description: "Formal and textual specification of the Semantic Aspect Meta Model (SAMM)",
       gh_pages_build_type: "legacy",
