@@ -294,7 +294,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      description: "VS Code extension for the Turtle language server",
+      description: "VS Code extension for editing Aspect Models",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
