@@ -302,6 +302,23 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
         orgs.newEnvironment('github-pages'),
       ],
     },
+    orgs.newRepo('esmf-vs-code-plugin') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "VS Code extension for editing Aspect Models",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          is_admin_enforced: true,
+          required_approving_review_count: 1,
+          requires_strict_status_checks: true,
+        },
+      ],
+    },
   ],
 } + {
   # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
