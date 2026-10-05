@@ -179,6 +179,13 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       description: "Demonstrate usage of esmf-sdk",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('esmf-examples') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "Example SAMM Aspect Models",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('esmf-sdk-js-aspect-model-loader') {
       allow_merge_commit: true,
       allow_update_branch: false,
