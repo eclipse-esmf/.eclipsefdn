@@ -130,6 +130,7 @@ orgs.newOrg('dt.esmf', 'eclipse-esmf') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      archived: true,
     },
     orgs.newRepo('esmf-parent') {
       allow_merge_commit: true,
